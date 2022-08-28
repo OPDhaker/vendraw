@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VenDraw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <script src="https://kit.fontawesome.com/70daf56398.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section class="about">
+
+        <h1>About us</h1>
+        <div class="about-container">
+            <div class="statistics">
+
+                <div>
+                    <h3>Year Established</h3>
+                    <p>2012</p>
+                </div>
+                <div>
+                    <h3>Products Sold</h3>
+                    <p class="statistics-each">2400</p>
+                </div>
+                <div>
+                    <h3>Products Offered</h3>
+                    <p>16</p>
+                </div>
+                <div>
+                    <h3>Current Stock</h3>
+                    <p class="statistics-each">1020</p>
+                </div>
+                <div>
+                    <h3>Employees</h3>
+                    <p> 50</p>
+                </div>
+            </div>
+            <div class="about-paragraph">
+
+                We champion continual progress for athletes and sport by taking action to help athletes reach their
+                potential. Every job at VenDraw, Inc. is grounded in a team-first mindset, cultivating a culture of
+                innovation and a shared purpose to leave an enduring impact.
+            </div>
+        </div>
+        <a href="shop.html">check out our collections</a>
+    </section>
+
+
+    <script>
+        const stats = document.querySelectorAll('.statistics-each');
+        setInterval(() => {
+
+            stats.forEach(a => {
+                a.innerHTML = Number(a.innerHTML) + 1;
+            })
+        }, 500)
+    </script>
+
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+.header-slideshow-1 {
+    top: 15%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}
+
+.header-slideshow-2 {
+    top: 50%
+}
+
+.header-slideshow-3 {
+    top: 85%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}
+
+.header-slideshow-slide {
+    transform: translate(0%, -50%);
+    transition: all 0.2s;
+    cursor: pointer;
+    height: 30% !important;
+    width: 100%;
+    text-align: right;
+    user-select: none;
+}
+.header-slideshow-slide img{
+    height: 100%;
+}
+
+.header-slideshow-4 {
+    top: 150%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}
+
+.header-slideshow-5 {
+    top: 200%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}
+
+.header-slideshow-6 {
+    display: none;
+
+}
+
+.header-slideshow-7 {
+    top: -200%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}
+
+.header-slideshow-8 {
+    top: -150%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}
+
+.header-slideshow-9 {
+    top: -100%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}
+
+.header-slideshow-10 {
+    top: -50%;
+    opacity: 50%;
+    filter: blur(.1rem);
+}

@@ -1,0 +1,127 @@
+.contact {
+    width: calc(100% - 160px);
+    margin: 5rem auto;
+    display: flex;
+    min-height: calc(100vh - 30rem);
+    /* align-items: center; */
+    justify-content: space-between;
+}
+
+.contact-form-inner {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+
+    grid-gap: 2rem 4rem;
+
+    margin: 3rem auto;
+}
+.contact-container{
+    /* height: ; */
+    display: flex;
+    height: 100%;
+    margin: 5rem auto;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact-form {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    height: 100%;
+    width: calc(50% - 5rem);
+}
+
+.contact-map {
+    height: 20rem;
+    width: calc(50% - 5rem);
+
+}
+
+input {
+    border: none;
+    background-color: #00000002;
+    box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, .1);
+    margin: 1rem 0;
+    outline: none;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+input:focus ~ label, textarea:focus ~ label, input:not(:placeholder-shown) ~ label, textarea:not(:placeholder-shown) ~ label {
+    top: -1rem !important;
+    left: 0rem
+}
+.contact-after{
+    line-height: 2rem;
+}
+
+.contact-form-inner div {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.contact-form-inner div label {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    transition: all 0.2s;
+    /* flex-direction: column; */
+}
+.contact-form-inner div:nth-child(3) label {
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem
+    /* flex-direction: column; */
+}
+.contact-form-inner div:nth-child(3) {
+
+    grid-column: span 2;
+    /* width: 100%; */
+}
+
+textarea::placeholder {
+    /* font-size: 5rem; */
+
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    transition: all 0.2s;
+    box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, .1);
+    width: 10rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+}
+
+textarea {
+    border-radius: .75rem;
+    width: 100%;
+    margin: 1rem 0;
+
+    border: none;
+    background-color: #00000002;
+    box-shadow: 0 0 .5rem .2rem rgba(0, 0, 0, .1);
+
+    outline: none;
+    padding: 1.5rem 1rem;
+    height: 10rem;
+    resize: none;
+}
+
+.contact-map-inner {
+    margin: 3rem auto;
+    box-shadow: 0 0 1rem 1rem rgba(0, 0, 0, .1);
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+
+}

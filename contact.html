@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VenDraw</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <script src="https://kit.fontawesome.com/70daf56398.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section class="contact">
+
+        <form class="contact-form">
+            <h2 class="contact-title">Contact Us</h2>
+
+            <div class="contact-container">
+                <p class="contact-after">
+                    Your message has been delivered safely to us. We will reply back to your message as soon as
+                    possible.
+                    Please send a
+                    follow up message, incase you don't receive a reply under 14 business days.
+                </p>
+                <p class="contact-after">
+                    Please make sure to check your spam folder.
+                </p>
+
+                <p class="contact-after">
+                    Thank you
+                </p>
+            </div>
+            <div class="contact-form-inner">
+                <div><input required type="text" id="name" placeholder=" "> <label for="name">Name</label></div>
+                <div><input required type="email" id="email" placeholder=" "> <label for="email">Email</label></div>
+                <div><textarea min="10" id="message" placeholder=" "></textarea><label for="message">Message</label>
+                </div>
+            </div>
+            <button>Submit</button>
+        </form>
+        <div class="contact-map">
+            <h2>
+                Find us
+            </h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14673.369624676185!2d77.3986515!3d23.1576999!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x631bb328a32d81f4!2sDPS%20Kolar%20Road%20Bhopal!5e0!3m2!1sen!2sin!4v1661662249277!5m2!1sen!2sin"
+                class="contact-map-inner" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        </div>
+
+    </section>
+
+ 
+    <script>
+        const form = document.querySelector('form');
+        const para = document.querySelector('.contact-container');
+        const inner = document.querySelector('.contact-form-inner');
+        const button = document.querySelector('button');
+
+        para.style.display = "none";
+        console.log(form)
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+
+            para.style.display = 'block';
+            inner.style.display = "none";
+            button.style.display = 'none';
+
+        })
+    </script>
+
+    <script src="footer.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
